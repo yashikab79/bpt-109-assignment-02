@@ -54,7 +54,6 @@ A student assignment repository containing solutions to all eight questions of *
 - **Roll Number:** 1826098
 - **Subject:** BPT-109
 - **Assignment:** 02
-- **Submission Date:** 23 November 2026
 
 
 No installation or additional dependencies are required.
