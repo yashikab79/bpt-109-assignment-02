@@ -56,16 +56,6 @@ A student assignment repository containing solutions to all eight questions of *
 - **Assignment:** 02
 - **Submission Date:** 23 November 2026
 
-## 🚀 Running Locally
-
-1. Clone this repository:
-
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Open the project folder.
-3. Open the HTML file in any modern web browser.
 
 No installation or additional dependencies are required.
 
