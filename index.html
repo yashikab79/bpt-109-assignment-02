@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Answers to all eight questions in BPT-109 Assignment 2 on processors, memory and storage devices." name="description"/>
+<title>BPT-109 Assignment 2 | Eight Answers</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232a3851'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='34' fill='white' font-family='serif'%3E8%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Yeseva+One&display=swap');
+
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f7f6f1; color: #26312f; font: 400 17px/1.7 'Josefin Sans', Arial, sans-serif; }
+    .page { max-width: 900px; margin: auto; padding: 46px 28px 24px; }
+    a { color: #235a59; text-underline-offset: 3px; }
+    .meta { color: #596d67; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+    header { border-bottom: 1px solid #bdc8c1; padding-bottom: 38px; }
+    h1, h2 { font-family: 'Yeseva One', Georgia, serif; font-weight: 400; letter-spacing: -.02em; }
+    h1 { font-size: clamp(2.7rem, 6vw, 4.7rem); line-height: 1.08; max-width: 680px; margin: 20px 0; }
+    header p:last-child { max-width: 600px; color: #53615c; margin-bottom: 0; }
+    nav { padding: 28px 0 38px; border-bottom: 1px solid #bdc8c1; }
+    nav h2 { font: 600 .82rem 'Josefin Sans', Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
+    nav ol { list-style: decimal-leading-zero; display: grid; grid-template-columns: 1fr 1fr; gap: 0 44px; padding-left: 30px; margin: 0; }
+    nav li { padding: 7px 0; border-bottom: 1px solid #d9ded8; color: #69827a; }
+    nav a { text-decoration: none; color: #26312f; }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    article { padding: 47px 0 43px; border-bottom: 1px solid #bdc8c1; }
+    article h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); line-height: 1.2; margin: 0 0 19px; }
+    h3 { font-size: 1.05rem; margin-top: 30px; }
+    .prompt { border-left: 3px solid #698c7d; padding: 8px 0 8px 18px; color: #455650; }
+    .prompt strong { color: #26312f; }
+    li { padding-left: 3px; margin: 7px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 22px 0; font-size: .92rem; line-height: 1.45; }
+    caption { text-align: left; color: #596d67; font-size: .84rem; padding-bottom: 9px; }
+    th, td { text-align: left; vertical-align: top; padding: 11px 12px; border-bottom: 1px solid #cbd4ce; }
+    thead th { background: #e8ede7; font-weight: 600; }
+    tbody th { font-weight: 600; }
+    figure { margin: 22px 0; }
+    figcaption, small { color: #596d67; }
+    .return { margin-top: 28px; font-size: .9rem; }
+    footer { color: #596d67; font-size: .85rem; padding: 26px 0 12px; }
+    @media (max-width: 650px) { .page { padding: 28px 18px; } nav ol { grid-template-columns: 1fr; } table { display: block; overflow-x: auto; } th, td { min-width: 125px; } }
+  </style>
+</head>
+<body>
+<div class="page">
+<header id="top">
+<p class="meta">BPT Assignment 02</p>
+<h1>Processor, Memory &amp; Storage</h1>
+<p><strong>Subject:</strong> BPT-109<br/><strong>Student Name:</strong> Yashika<br/><strong>Roll No:</strong> 1826098<br/><strong>Units:</strong> 3 and 4<br/><strong>Submission Date:</strong> 23 November 2026</p>
+</header>
+<nav aria-label="Question navigation" id="contents">
+<h2>Contents</h2>
+<ol><li><a href="#q1">Functional components of the CPU and types of main memory</a></li><li><a href="#q2">Fetch–decode–execute instruction cycle</a></li><li><a href="#q3">Magnetic disks and magnetic tape in a university computer centre</a></li><li><a href="#q4">Sequential access and direct access storage devices</a></li><li><a href="#q5">Comparison of RAM and ROM types</a></li><li><a href="#q6">Best medium for long-term archiving of institutional records</a></li><li><a href="#q7">Factors affecting CPU performance</a></li><li><a href="#q8">Balanced configuration for a 60-student college computer lab</a></li></ol>
+</nav>
+<main><article id="q1"><h2>1. Functional components of the CPU and types of main memory</h2><p class="prompt"><strong>Question.</strong> List the three main functional components of the CPU and identify four types of main memory (RAM, ROM, cache memory and registers), stating one key characteristic of each.</p><h3>Three main functional components of the CPU</h3>
+<ol>
+<li><strong>Control Unit (CU):</strong> Directs and coordinates computer operations. It fetches instructions from memory, decodes them and issues control signals to the other components.</li>
+<li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic operations such as addition and subtraction, and logical operations such as AND, OR, NOT and comparisons.</li>
+<li><strong>Registers:</strong> Very small, high-speed storage locations inside the CPU that temporarily hold instructions, addresses and data currently being processed.</li>
+</ol>
+<h3>Four types of main memory</h3>
+<table>
+<caption>Types of memory and their key characteristics</caption>
+<thead><tr><th scope="col">Memory type</th><th scope="col">Key characteristic</th><th scope="col">Main purpose</th></tr></thead>
+<tbody>
+<tr><th scope="row">RAM (Random Access Memory)</th><td>Volatile: its contents are lost when power is switched off.</td><td>Temporarily stores programs and data currently in use.</td></tr>
+<tr><th scope="row">ROM (Read Only Memory)</th><td>Non-volatile: it retains its contents without power.</td><td>Stores firmware and essential startup instructions.</td></tr>
+<tr><th scope="row">Cache memory</th><td>Small, very fast memory located close to or inside the CPU.</td><td>Keeps frequently or recently used instructions and data ready for the processor.</td></tr>
+<tr><th scope="row">Registers</th><td>Fastest storage locations, built directly into the CPU.</td><td>Hold immediate values, addresses and instructions during execution.</td></tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> The CU controls operations, the ALU processes data and registers provide immediate storage. RAM, ROM, cache and registers serve different roles in making instruction processing efficient.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q2"><h2>2. Fetch–decode–execute instruction cycle</h2><p class="prompt"><strong>Question.</strong> Explain the fetch–decode–execute instruction cycle, detailing how the control unit, ALU and CPU registers (PC, IR, MAR, MDR, accumulator) interact with main memory while a program instruction is processed.</p><p>The <strong>fetch–decode–execute cycle</strong> is the repeated sequence through which the CPU processes program instructions. The control unit coordinates the cycle, the registers hold the required information and the ALU performs arithmetic or logical work.</p>
+<h3>Important CPU registers</h3>
+<table>
+<caption>Registers involved in instruction processing</caption>
+<thead><tr><th scope="col">Register</th><th scope="col">Function</th></tr></thead>
+<tbody>
+<tr><th scope="row">Program Counter (PC)</th><td>Stores the address of the next instruction to be fetched.</td></tr>
+<tr><th scope="row">Instruction Register (IR)</th><td>Holds the current instruction while it is decoded and executed.</td></tr>
+<tr><th scope="row">Memory Address Register (MAR)</th><td>Holds the address of the memory location being accessed.</td></tr>
+<tr><th scope="row">Memory Data Register (MDR)</th><td>Holds data or an instruction being transferred to or from main memory.</td></tr>
+<tr><th scope="row">Accumulator</th><td>Temporarily stores data and intermediate results produced by the ALU.</td></tr>
+</tbody></table>
+<h3>Stages of the cycle</h3>
+<ol>
+<li><strong>Fetch:</strong> The PC contains the address of the next instruction. The CPU copies this address to the MAR. The control unit sends a memory-read signal, and main memory returns the instruction through the MDR. The instruction is then copied into the IR. The PC is updated to point to the next instruction (unless the instruction changes the sequence).</li>
+<li><strong>Decode:</strong> The control unit examines the instruction in the IR. It identifies the operation to perform and determines whether additional data or memory addresses are required.</li>
+<li><strong>Execute:</strong> The control unit directs the required data transfer. If an arithmetic or logical operation is needed, the ALU performs it. Operands may be held in registers, and the accumulator can store an intermediate or final result.</li>
+<li><strong>Store:</strong> If required, the result is transferred from a CPU register to main memory. The MAR holds the destination address, while the MDR carries the data during the write operation.</li>
+</ol>
+<p><strong>CPU–memory interaction:</strong> The address is supplied through the MAR, while the MDR carries the instruction or data. The control unit coordinates read and write operations. After one instruction is completed, the CPU repeats the cycle for the next instruction.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q3"><h2>3. Magnetic disks and magnetic tape in a university computer centre</h2><p class="prompt"><strong>Question.</strong> Demonstrate how magnetic disks (hard disk drives) and magnetic tape can be deployed in a university computer centre to store live student records and to take periodic backups of the same data.</p><p>A university computer centre can use <strong>hard disk drives (HDDs)</strong> for active student records and <strong>magnetic tape</strong> for periodic backups. The two technologies complement each other because they are suited to different storage needs.</p>
+<table>
+<caption>Example deployment in a university computer centre</caption>
+<thead><tr><th scope="col">Use</th><th scope="col">Device and process</th><th scope="col">Result</th></tr></thead>
+<tbody>
+<tr><th scope="row">Live student records</th><td>The student information system stores its active database on HDD-based storage. The server reads and updates records such as enrolment, attendance, fee status and examination details.</td><td>Staff and authorised students can retrieve and update current information through the university system.</td></tr>
+<tr><th scope="row">Regular backups</th><td>At scheduled intervals, backup software copies database backups and required files from disk storage to magnetic tape.</td><td>A separate copy is available if the live database is damaged, deleted or affected by hardware failure.</td></tr>
+<tr><th scope="row">Off-site protection</th><td>Completed tapes are labelled, encrypted where supported, catalogued and moved to a secure off-site storage location.</td><td>A fire, theft or other incident at the computer centre is less likely to destroy both the live data and its backup.</td></tr>
+<tr><th scope="row">Recovery</th><td>If the main storage fails, administrators restore the latest suitable backup from tape to replacement disk storage and apply any available later transaction logs.</td><td>The student information system can be brought back online with minimal data loss, depending on backup frequency.</td></tr>
+</tbody></table>
+<h3>Practical safeguards</h3>
+<ul>
+<li>Schedule full and incremental backups according to the university's recovery requirements.</li>
+<li>Keep multiple backup generations and at least one copy offline or off-site.</li>
+<li>Restrict access to student records and encrypt backup media containing personal information.</li>
+<li>Test restoration regularly; a backup is useful only if the data can be recovered.</li>
+</ul>
+<p><strong>Conclusion:</strong> HDDs provide convenient direct access for live records, while magnetic tape offers economical, removable storage for periodic backups and long-term retention.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q4"><h2>4. Sequential access and direct access storage devices</h2><p class="prompt"><strong>Question.</strong> Distinguish between sequential access devices (e.g., magnetic tape) and direct access devices (e.g., magnetic disk, optical disk) in terms of data retrieval method, access time, typical applications and cost per unit of storage.</p><p>Storage devices can be classified by how data is located and retrieved. In <strong>sequential access</strong>, records are reached in sequence. In <strong>direct access</strong>, the device can move to a location and retrieve the required data without reading every preceding record.</p>
+<table>
+<caption>Comparison of sequential and direct access storage</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Sequential access</th><th scope="col">Direct access</th></tr></thead>
+<tbody>
+<tr><th scope="row">Example devices</th><td>Magnetic tape.</td><td>Magnetic disk (HDD) and optical disk (CD, DVD or Blu-ray).</td></tr>
+<tr><th scope="row">Data retrieval method</th><td>Data is read in sequence. The tape must move past earlier data to reach a later record.</td><td>The device locates the required block or sector directly, although mechanical movement or seek operations may still be involved.</td></tr>
+<tr><th scope="row">Access time</th><td>Usually slower when a particular item must be found because preceding data may need to be passed.</td><td>Generally faster for retrieving a particular file or block, especially on a well-organised disk.</td></tr>
+<tr><th scope="row">Typical applications</th><td>Backups, archival copies and large batches of data that are not accessed frequently.</td><td>Operating systems, application files, databases, media and other data requiring regular retrieval.</td></tr>
+<tr><th scope="row">Cost per unit of storage</th><td>Often low for large-capacity tape storage, making it suitable for bulk backup and archives.</td><td>Varies by medium; HDDs offer relatively economical online storage, while optical discs are useful for portable or distributable copies.</td></tr>
+</tbody></table>
+<p><strong>Conclusion:</strong> Sequential access is appropriate when data is stored or restored in large batches and low cost is important. Direct access is preferable when users and applications need to locate individual records quickly.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q5"><h2>5. Comparison of RAM and ROM types</h2><p class="prompt"><strong>Question.</strong> Compare RAM (SRAM and DRAM) with ROM (PROM, EPROM and EEPROM) in terms of volatility, speed, cost, read/write capability and their respective roles during system boot-up and program execution.</p><p><strong>RAM</strong> is temporary working memory used while programs run, whereas <strong>ROM</strong> is non-volatile memory commonly used to retain firmware. Their subtypes differ in speed, cost and the way their contents can be changed.</p>
+<h3>RAM: SRAM and DRAM</h3>
+<table>
+<caption>Comparison of RAM types</caption>
+<thead><tr><th scope="col">Feature</th><th scope="col">SRAM</th><th scope="col">DRAM</th></tr></thead>
+<tbody>
+<tr><th scope="row">Volatility</th><td>Volatile; loses data when power is removed.</td><td>Volatile; loses data when power is removed.</td></tr>
+<tr><th scope="row">Speed</th><td>Very fast; does not require periodic refresh.</td><td>Slower than SRAM and requires periodic refreshing.</td></tr>
+<tr><th scope="row">Cost</th><td>More expensive per bit.</td><td>Less expensive per bit and available in higher capacities.</td></tr>
+<tr><th scope="row">Read/write</th><td>Can be read and written while powered.</td><td>Can be read and written while powered.</td></tr>
+<tr><th scope="row">Typical role</th><td>Commonly used for CPU cache.</td><td>Commonly used as the computer's main system memory.</td></tr>
+</tbody></table>
+<h3>ROM: PROM, EPROM and EEPROM</h3>
+<table>
+<caption>Comparison of ROM types</caption>
+<thead><tr><th scope="col">Type</th><th scope="col">Volatility and rewriting</th><th scope="col">Typical characteristic</th></tr></thead>
+<tbody>
+<tr><th scope="row">PROM</th><td>Non-volatile; programmed once by the user and cannot normally be erased.</td><td>Useful when firmware or data needs to be permanently written after manufacture.</td></tr>
+<tr><th scope="row">EPROM</th><td>Non-volatile; erased using ultraviolet light and then reprogrammed.</td><td>Can be reused, but erasing generally requires removing the chip from the circuit.</td></tr>
+<tr><th scope="row">EEPROM</th><td>Non-volatile; electrically erased and reprogrammed.</td><td>Can be updated in-circuit, often in smaller sections.</td></tr>
+</tbody></table>
+<h3>Role during boot-up and program execution</h3>
+<ol>
+<li>When the computer is switched on, firmware stored in non-volatile ROM or flash memory begins executing.</li>
+<li>The firmware performs basic hardware checks and initialises essential devices, then locates and starts the bootloader or operating system.</li>
+<li>The operating system and running programs are loaded into DRAM, where the CPU can access their instructions and data.</li>
+<li>SRAM cache keeps frequently needed information close to the CPU to reduce average memory access time.</li>
+</ol>
+<p><strong>Conclusion:</strong> RAM provides fast, temporary read/write working space, while ROM retains important instructions without power. Both are necessary for a computer to start and run programs.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q6"><h2>6. Best medium for long-term archiving of institutional records</h2><p class="prompt"><strong>Question.</strong> Assess whether a magnetic tape library, a hard-disk-based mass storage array (RAID/NAS) or optical discs (CD/DVD/Blu-ray) is the most suitable medium for long-term archiving of institutional records, justifying your selection based on storage capacity, cost per GB, durability and data retrieval time.</p><p>For a large institution that must preserve records for many years, a <strong>magnetic tape library</strong> is generally the most suitable primary archival medium, provided that tapes are stored correctly and their contents are checked and migrated when necessary. A disk array or NAS is better suited to frequently accessed online data.</p>
+<table>
+<caption>Assessment of long-term archival options</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Magnetic tape library</th><th scope="col">HDD array (RAID/NAS)</th><th scope="col">Optical discs</th></tr></thead>
+<tbody>
+<tr><th scope="row">Storage capacity</th><td>High capacity per cartridge; libraries can hold many cartridges and scale by adding media.</td><td>High capacity and convenient expansion by adding drives or arrays.</td><td>Relatively low capacity per disc, so large archives require many discs.</td></tr>
+<tr><th scope="row">Cost per GB</th><td>Usually low for large-scale archival storage, although drives, robotics and management add initial cost.</td><td>Generally higher for continuously available storage because drives, enclosures and redundancy are required.</td><td>Media can be inexpensive, but large collections require handling, labelling and storage space.</td></tr>
+<tr><th scope="row">Durability</th><td>Can provide long service when stored in controlled conditions and handled correctly; periodic integrity checks and migration are still required.</td><td>Drives have moving parts and can fail. RAID improves availability but is not a substitute for an independent backup.</td><td>Can be durable when suitable archival-grade media is stored and handled correctly; discs may scratch or degrade.</td></tr>
+<tr><th scope="row">Retrieval time</th><td>Slower; a cartridge may need to be mounted and the tape positioned.</td><td>Fast online access, suitable for frequent searches and updates.</td><td>Slower than online disks; discs may need to be located and loaded manually or by a jukebox.</td></tr>
+</tbody></table>
+<h3>Justification and recommended policy</h3>
+<ul>
+<li>Use tape for large volumes of records that must be retained but are accessed infrequently.</li>
+<li>Keep an online disk/NAS copy for records that staff need to retrieve regularly.</li>
+<li>Maintain more than one copy, with at least one copy offline and another at a separate location.</li>
+<li>Use checksums and scheduled restore tests to detect corruption and confirm that files remain readable.</li>
+<li>Maintain a catalogue of media, formats, retention dates and encryption keys, and plan periodic migration to supported hardware and file formats.</li>
+</ul>
+<p><strong>Conclusion:</strong> Tape offers a strong balance of capacity and cost for long-term institutional archives. It should be part of a managed archival strategy rather than the only copy of important records.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q7"><h2>7. Factors affecting CPU performance</h2><p class="prompt"><strong>Question.</strong> Critique the statement that “increasing the CPU clock speed alone is the best way to improve computer performance”, by considering the roles of cache memory size, word length, number of cores and main memory capacity.</p><p>The statement is <strong>not completely correct</strong>. Increasing clock speed can improve performance, but it is not always the best solution because overall performance depends on several components working together. A faster CPU may still wait for data, be limited by software or generate too much heat.</p>
+<table>
+<caption>How different factors influence CPU performance</caption>
+<thead><tr><th scope="col">Factor</th><th scope="col">Role in performance</th><th scope="col">Limitation or consideration</th></tr></thead>
+<tbody>
+<tr><th scope="row">Clock speed</th><td>Measures how many clock cycles the processor performs per second. A higher frequency can allow more cycles in a given time.</td><td>More cycles do not automatically mean proportionally more completed instructions. Architecture, power limits, cooling and workload matter.</td></tr>
+<tr><th scope="row">Cache memory size</th><td>A larger or more effective cache can keep frequently used data and instructions near the CPU, reducing slower accesses to RAM.</td><td>Cache is expensive and limited in size. Cache design and hit rate matter, not capacity alone.</td></tr>
+<tr><th scope="row">Word length</th><td>Indicates the number of bits a processor can handle as a unit and influences address space and the size of data it can process efficiently.</td><td>A larger word length does not make every task faster; software and data types must benefit from it.</td></tr>
+<tr><th scope="row">Number of cores</th><td>Multiple cores can execute separate threads or tasks in parallel, improving multitasking and well-parallelised workloads.</td><td>Software that cannot be divided into parallel work may gain little from extra cores.</td></tr>
+<tr><th scope="row">Main memory capacity</th><td>Adequate RAM allows active programs and data to remain in memory, reducing slow disk swapping.</td><td>Adding RAM beyond what a workload needs may not noticeably improve CPU-bound tasks.</td></tr>
+</tbody></table>
+<h3>Overall assessment</h3>
+<p>For example, a processor with a high clock speed but insufficient RAM may slow down when several applications are open because the system must move data between RAM and storage. Similarly, a processor with multiple cores can handle parallel workloads efficiently even if its clock speed is lower.</p>
+<p>The best improvement depends on identifying the actual bottleneck. A balanced system should have an appropriate CPU frequency, effective cache, suitable word length and core count, and enough main memory for its workload.</p>
+<p><strong>Conclusion:</strong> Clock speed is important, but it is only one performance factor. Balanced hardware and software optimisation provide better results than increasing frequency alone.</p><p class="return"><a href="#contents">↑ Contents</a></p></article><article id="q8"><h2>8. Balanced configuration for a 60-student college computer lab</h2><p class="prompt"><strong>Question.</strong> Design a balanced processor, memory and storage configuration for a computer lab of a college serving 60 students. Propose a coherent specification for the CPU, main memory (RAM/cache), primary storage and a backup/mass storage solution, justifying how the choices work together within a limited budget.</p><p>For a college lab serving <strong>60 students</strong>, a practical approach is to provide 60 student computers with balanced mid-range specifications and centralised backup storage. The configuration should support programming, office applications, web browsing, online learning and introductory development tools without spending the budget on unnecessary high-end components.</p>
+<h3>Proposed configuration per student computer</h3>
+<table>
+<caption>Suggested specification for each of the 60 lab systems</caption>
+<thead><tr><th scope="col">Component</th><th scope="col">Proposed specification</th><th scope="col">Reason</th></tr></thead>
+<tbody>
+<tr><th scope="row">CPU</th><td>Modern 6-core, 64-bit processor with integrated graphics.</td><td>Provides sufficient performance for multitasking, compiling beginner-level programs and everyday academic software without requiring a separate graphics card.</td></tr>
+<tr><th scope="row">Cache</th><td>Processor's standard multi-level L1, L2 and L3 cache.</td><td>Fast cache helps reduce repeated access to slower main memory. The lab can use the cache supplied with the selected processor rather than paying for a separate component.</td></tr>
+<tr><th scope="row">RAM</th><td>16 GB DDR4 or DDR5, depending on platform and price.</td><td>Allows students to run an IDE, browser, documentation and other learning tools together. Memory should be upgradeable where possible.</td></tr>
+<tr><th scope="row">Primary storage</th><td>512 GB SSD per computer.</td><td>Provides fast booting and application loading, with enough space for operating systems, tools and student work.</td></tr>
+<tr><th scope="row">Graphics</th><td>Integrated graphics.</td><td>Suitable for normal programming and productivity tasks, avoiding the cost and power use of dedicated graphics cards.</td></tr>
+</tbody></table>
+<h3>Shared backup and mass storage</h3>
+<ul>
+<li><strong>Central NAS:</strong> Use a network-attached storage system with multiple hard drives and RAID redundancy to store shared lab resources and centralised student-work backups.</li>
+<li><strong>External backup:</strong> Back up the NAS to external drives or magnetic tape on a schedule, keeping at least one copy offline or off-site.</li>
+<li><strong>Network:</strong> Connect the computers and NAS through a reliable gigabit Ethernet network for shared files and backup transfers.</li>
+<li><strong>Administration:</strong> Use standard software images, centralised updates and user accounts to simplify maintenance across all 60 systems.</li>
+</ul>
+<h3>How the configuration works together</h3>
+<p>The CPU executes student programs, using its cache for frequently accessed instructions and data. The 16 GB RAM holds active applications and files, while the SSD provides fast permanent storage for the operating system and local work. The NAS gives the lab a shared storage location, and a separate backup copy protects important work if the main storage is damaged.</p>
+<p><strong>Budget justification:</strong> A mid-range processor with integrated graphics, 16 GB RAM and a 512 GB SSD gives useful everyday performance without the expense of gaming-class hardware. Buying identical systems in bulk, choosing upgradeable components and using centralised backup and administration can reduce long-term purchase and maintenance costs.</p>
+<p><strong>Conclusion:</strong> This design balances processing power, memory and storage for 60 students. It prioritises responsive everyday use, manageable administration and reliable backups while keeping the configuration suitable for a limited college budget.</p><p class="return"><a href="#contents">↑ Contents</a></p></article></main>
+<footer><p>BPT-109 Assignment 02  ·  Units 3 and 4</p></footer>
+</div>
+</body>
+</html>
